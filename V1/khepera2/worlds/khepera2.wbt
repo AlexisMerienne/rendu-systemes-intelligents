@@ -1,0 +1,75 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "../protos/Khepera2.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/lights/protos/FloorLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/obstacles/protos/OilBarrel.proto"
+
+WorldInfo {
+  info [
+    "The model of the Khepera II robot"
+  ]
+  title "Khepera II"
+}
+Viewpoint {
+  fieldOfView 0.7
+  orientation 0.44226133080226027 -0.352679564198034 -0.824634488894382 4.304987184151187
+  position 0.6126590567590666 -2.2264411895343903 3.2678788933993888
+  follow "khepera2"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  luminosity 0
+}
+RectangleArena {
+  floorSize 2 2
+}
+FloorLight {
+  translation 0.66 0.31 -1.16
+}
+WoodenBox {
+  translation -0.2 -0.683174 0.05
+  rotation -0.45445591677276886 -0.7661198596958863 0.45445591677276886 -1.8341153071795864
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.75 0.35 0.05
+  rotation -0.12634796090434602 0.9839066955512742 -0.12634796090434602 -1.5870153071795858
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.5 -0.35471 0.05
+  rotation -1.46018e-08 7.19235e-09 -1 0.915365
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.3 0.36 0.05
+  rotation -0.3063990552359414 0.9012431624711751 -0.3063990552359414 -1.6745853071795862
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.65 -0.66 0.05
+  rotation -0.3063990552359414 0.9012431624711751 -0.3063990552359414 -1.6745853071795862
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+}
+Khepera2 {
+  hidden position_0_0 521.8568806503838
+  hidden position_0_1 586.3836802793988
+  hidden rotation_1 0.7059576860428185 -0.7059577414325213 0.05698607574278952 3.2554422933600513
+  hidden rotation_2 0.057518623188415684 -0.057518143568865455 0.9966861447551584 4.709069335157465
+  translation -0.514815 -0.728583 0
+  rotation 0 0 1 0.194359
+  name "khepera2"
+  controller "v1_controller"
+}
+OilBarrel {
+  translation 0.07 -0.13 0.44
+}
