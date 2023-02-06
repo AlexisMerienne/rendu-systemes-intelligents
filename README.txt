@@ -46,3 +46,19 @@ L'architecture reprend celle donné en image sur le TD. Voici les différentes �
 6- Le serveur webots reçoit la vitesse des deux moteurs, met à jour en conséquence la vitesse des moteurs.
 7- Retour à l'étape 1.
 
+
+1. Test de la solution
+
+Nous n'avons pas réussi à mettre en place l'intégralité de ce que nous voulions faire dans l'architecture générale, car nous n'arrivons pas à communiquer entre conteneurs (du coordinateur vers les comportements), mais nous arrivons néanmoins à faire communiquer le serveur webots vers le conteneur coordinateur (envoie des données des capteurs, et réception des vitesses). Nous vous livrons l'ensemble de ce que nous avons produit pour montrer notre bonne foi.
+
+Pour tester la partie communication serveur webots <--> coordinateur :
+
+1- Ouvrir webot -> Ouvrir le monde dans v2 -> Choisir le controller 'host' -> Lancer la simulation
+2- Lancer le container braitenberg :
+cd td5-container-braitenberg
+docker build -t braitenberg-image
+docker run --name braitenberg-container braitenberg-image
+3- Lancer le container light
+cd td5-container-light
+docker build -t light-image
+docker run --name light-container light-image
