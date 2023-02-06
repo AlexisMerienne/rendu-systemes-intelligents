@@ -1,0 +1,44 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/Khepera2.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/lights/protos/CeilingSpotLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/solids/protos/SolidBox.proto"
+
+WorldInfo {
+  info [
+    "The model of the Khepera II robot"
+  ]
+  title "Khepera II"
+}
+Viewpoint {
+  orientation 0.27494745754080696 -0.3742726352387027 -0.8856206242535928 4.898237187553252
+  position -0.776218010632009 -2.9394759989550763 1.9972814421737854
+  follow "khepera2"
+}
+TexturedBackgroundLight {
+  luminosity 0.2
+}
+RectangleArena {
+  floorSize 2 2
+}
+Khepera2 {
+  hidden position_0_0 18427.437288904195
+  hidden position_0_1 9334.009992920795
+  hidden rotation_1 0.5596518180591223 -0.5596516177809381 0.611211836647735 4.238838578764694
+  hidden rotation_2 0.5728454465500517 -0.5728449920555145 0.5862565218774025 4.202098180124501
+  translation -0.6985089329588323 0.09279916257834146 5.5199e-09
+  rotation 1.27058e-08 -9.58979e-09 1 1.4678869604484153
+  name "khepera2"
+  controller "host"
+}
+CeilingSpotLight {
+  spotLightIntensity 4
+  spotLightRadius 104
+}
+SolidBox {
+  translation 0.24282 0.178999 0.1
+  rotation 0 0 1 0.523599
+  size 0.2 0.2 0.2
+}
